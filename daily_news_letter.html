@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .flex-container {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    max-width: 950px;
+    flex-basis: auto; /* default value */
+    flex-grow: 1;
+    }
+    .flex-container > div {
+    margin: 10px;
+    padding: 5px;
+    font-size: 10px;
+    }
+    .news_secondary {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    flex: 0 0 50% ;
+    height: 50%;
+    width: 100%;
+    }
+    .news_main {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    }
+    .news_header {
+    margin: 10px;
+    padding: 5px;
+    background-color: #9d0b0b;
+    }
+    .time_country {
+    margin: 0px;
+    padding: 5px;
+    color: #424949;
+    text-align: left;
+    }
+    body {
+    font-family: Arial;
+    margin: 0;
+    }
+    h1 {
+    font-size: 26px;
+    margin: 0px;
+    color: #f1f1f1;
+    }
+    h2 {
+    font-size: 18px;
+    margin: 0px;
+    }
+    h3 {
+    font-size: 26px;
+    margin: 0px;
+    color: #424949;
+    }
+    p {
+    font-size: 14px;
+    margin: 5px;
+    }
+    img {
+    width: 100%;
+    }
+    a {
+    color: #424949;
+    text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="news_header">
+      <h1 style="font-size: 50px">BBC: WORLD NEWS</h1>
+      <p style = "color: #f1f1f1">$$date_time$$</p>
+    </div>
+    <div class="flex-container">
+      <div style ="width: 125%">
+        <div class="news_main">
+          <img src="$$news_main_img$$">
+          <h3><a href="$$news_main_link$$">$$news_main_title$$</a></h3>
+          <p>$$news_main_summary$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_main_time$$ | $$news_main_time$$</span>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="news_secondary">
+          <img src="$$news_img_0$$">
+          <h2><a href="$$news_link_0$$">$$news_title_0$$</h2>
+          <p>$$news_summary_0$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_time_0$$ | $$news_theme_0$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$news_img_1$$">
+          <h2><a href="$$news_link_1$$">$$news_title_1$$</a></h2>
+          <p>$$news_summary_1$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_time_1$$ | $$news_theme_1$$</span>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="news_secondary">
+          <img src="$$news_img_2$$">
+          <h2><a href="$$news_link_2$$">$$news_title_2$$</a></h2>
+          <p>$$news_summary_2$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_time_2$$ | $$news_theme_2$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$news_img_3$$">
+          <h2><a href="$$news_link_3$$">$$news_title_3$$</a></h2>
+          <p>$$news_summary_3$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_time_3$$ | $$news_theme_3$$</span>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="news_secondary">
+          <img src="$$news_img_4$$">
+          <h2><a href="$$news_link_4$$">$$news_title_4$$</a></h2>
+          <p>$$news_summary_4$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$news_time_4$$ | $$news_theme_4$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$news_img_5$$">
+          <h2><a href="$$news_link_5$$">$$news_title_5$$</a></h2>
+          <p>$$news_summary_5$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: bottom;">$$news_time_5$$ | $$news_theme_5$$</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="news_header" style="background-color: #395697;">
+      <h1 style="font-size: 50px">Hacker News</h1>
+    </div>
+    <div class="flex-container">
+      <div>
+        <div class="news_secondary">
+          <img src="$$hn_img_0$$">
+          <h2><a href="$$hn_link_0$$">$$hn_title_0$$</h2>
+          <p>$$hn_summary_0$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$hn_time_0$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$hn_img_1$$">
+          <h2><a href="$$news_link_1$$">$$hn_title_1$$</a></h2>
+          <p>$$hn_summary_1$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$hn_time_1$$</span>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="news_secondary">
+          <img src="$$hn_img_2$$">
+          <h2><a href="$$hn_link_2$$">$$hn_title_2$$</a></h2>
+          <p>$$hn_summary_2$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$hn_time_2$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$hn_img_3$$">
+          <h2><a href="$$hn_link_3$$">$$hn_title_3$$</a></h2>
+          <p>$$hn_summary_3$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$hn_time_3$$</span>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="news_secondary">
+          <img src="$$hn_img_4$$">
+          <h2><a href="$$hn_link_4$$">$$hn_title_4$$</a></h2>
+          <p>$$hn_summary_4$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: top;">$$hn_time_4$$</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="news_secondary">
+          <img src="$$hn_img_5$$">
+          <h2><a href="$$hn_link_5$$">$$hn_title_5$$</a></h2>
+          <p>$$hn_summary_5$$</p>
+          
+          <div class = "time_country">
+          <svg focusable="false" viewBox="0 0 32 32" width="15px"><polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon><path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path></svg>
+          <span style="font-size: 14px;
+    vertical-align: bottom;">$$hn_time_5$$</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="news_header">
+      <h1 style="font-size: 50px">Deloitte Lunch</h1>
+    </div>
+    <div class="news_header">
+      <h1 style="font-size: 50px">Schedule</h1>
+    </div>
+    <div class="news_header">
+      <h1 style="font-size: 50px">Unread Emails</h1>
+    </div>
+  </body>
+</html>
